@@ -1,0 +1,397 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(166, 242, 207);
+  background: linear-gradient(
+    180deg,
+    rgba(166, 242, 207, 1) 0%,
+    rgba(233, 252, 233, 1) 100%
+  );
+
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #062807;
+}
+
+nav {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  width: 80%;
+}
+
+.logo {
+  font-size: 20px;
+  /* This feature does not work on latest chrome :( */
+
+  /* background: rgb(120, 180, 181);
+  background: radial-gradient(
+    circle,
+    rgba(120, 180, 181, 1) 0%,
+    rgba(81, 166, 127, 1) 50%,
+    rgba(1, 134, 139, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  margin-right: 60px;
+  text-align: center;
+  color: #062807;
+}
+
+li {
+  list-style: none;
+  padding: 8px;
+}
+
+li:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+  transition: 300ms;
+  border-radius: 8px;
+}
+
+.nav-line {
+  border: #e9fce9 1px solid;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 625px;
+  padding: 80px;
+  width: 90vw;
+  margin: auto;
+}
+
+.self-desc {
+  align-self: center;
+}
+
+.text-desc {
+  line-height: 1.5;
+}
+
+.name-intro {
+  font-size: 40px;
+  color: #062807;
+}
+
+.myname {
+  /* This feature does not work on latest chrome :( */
+
+  /* background: rgb(120, 180, 181);
+  background: radial-gradient(
+    circle,
+    rgba(120, 180, 181, 1) 0%,
+    rgba(81, 166, 127, 1) 50%,
+    rgba(1, 134, 139, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.personal-desc {
+  font-size: 20px;
+  color: #062807;
+  width: 35vw;
+}
+
+.my-skills {
+  margin-top: 10px;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 35vw;
+  gap: 5px;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.lang {
+  width: 90px;
+  height: auto;
+  padding: 8px;
+  justify-self: center;
+  align-self: center;
+}
+
+.css {
+  width: 105px;
+  height: 100px;
+  margin-bottom: 2px;
+}
+
+.js {
+  width: 85px;
+  height: 90px;
+  padding-top: 5px;
+}
+
+.self-img {
+  justify-self: center;
+  align-self: center;
+}
+
+.img-bgrd {
+  background: rgb(166, 242, 207);
+  background: linear-gradient(
+    0deg,
+    rgba(166, 242, 207, 1) 0%,
+    rgba(233, 252, 233, 1) 100%
+  );
+  padding: 40px;
+  border-radius: 80px;
+}
+
+.memoji {
+  width: 250px;
+}
+
+.about {
+  width: 90vw;
+  height: auto;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1 0px;
+}
+
+.about-me-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-me-title {
+  margin-top: 88px;
+  color: #062807;
+  font-size: 40px;
+}
+
+.about-memoji {
+  width: 200px;
+  padding: 20px;
+  margin-bottom: 200px;
+}
+
+.about-me-right {
+  margin-top: 90px;
+}
+
+.about-me-desc {
+  color: #062807;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.project-title {
+  margin: 20px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.projects {
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.03);
+  width: 80vw;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.project-title {
+  color: #062807;
+}
+
+.project-title-line {
+  width: 12%;
+  margin: auto;
+  border: #062807 1px solid;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.project-left {
+  margin: auto;
+  text-align: center;
+}
+
+.project-name {
+  padding: 20px;
+  font-size: 25px;
+  color: #062807;
+}
+
+.project-img {
+  width: 450px;
+  border: #062807 2px solid;
+  border-radius: 10px;
+}
+
+.project-right {
+  margin: auto;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  gap: 15px;
+}
+
+.project-desc {
+  text-align: center;
+  padding: 8px;
+  color: #062807;
+}
+
+.buttons {
+  width: 20vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.live-demo {
+  background: transparent;
+  font-size: 20px;
+  width: 60px;
+  height: 30px;
+  border: #062807 1px solid;
+  border-radius: 30px;
+  justify-self: center;
+  color: #062807;
+}
+
+.live-demo:hover {
+  background-color: #a6f2cf;
+  border-radius: 30px;
+}
+
+.github {
+  background: transparent;
+  border: none !important;
+  font-size: 0;
+  width: 50px;
+  justify-self: center;
+}
+
+.github:hover {
+  background-color: #a6f2cf;
+  border-radius: 25px;
+}
+
+.gitpic {
+  width: 50px;
+}
+
+.project-line {
+  border: #062807 1px solid;
+  border-radius: 0.5px;
+}
+
+.contact {
+  margin-top: 50px;
+  width: 100vw;
+  color: white;
+  background-color: #062807;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.contact-info-title {
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.contact-grid {
+  width: 80vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 30px;
+  padding: 20px;
+}
+
+.contact-me-title {
+  text-align: center;
+}
+
+.phone,
+.email {
+  text-align: center;
+}
+
+.contact-left {
+  line-height: 3;
+  border-right: grey 1px solid;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 3fr;
+}
+
+input {
+  padding: 8px;
+  background-color: #062807;
+  border: #a6f2cf 1px solid;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+textarea {
+  background-color: #062807;
+  border: #a6f2cf 1px solid;
+  border-radius: 8px;
+  padding: 8px;
+  color: white;
+}
+
+.submit {
+  width: 100px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #a6f2cf;
+  color: #062807;
+}
+
+.submit:hover {
+  background-color: #e9fce9;
+}
